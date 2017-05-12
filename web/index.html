@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweetcool</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1><strong>Tweetcool</strong></h1>
+    <form action="/tweet" method="post">
+        <div align="center" class="container">
+            <p><strong><h4>Name:</h4></strong></p>
+            <p><input type="text" name="name" placeholder="User name"><br></p>
+            <p><strong><h4>Message:</h4></strong></p>
+            <p><textarea rows="20" cols="180" name="message"></textarea></p>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+    <form action="/tweet" method="get">
+        <div align="center" class="container">
+            Limit<br>
+            <input type="number" name="limit" placeholder="Limit"><br>
+            Poster<br>
+            <input type="text" name="filter" placeholder="filterName"><br>
+            <button type="submit">Show filtered tweets</button>
+        </div>
+    </form>
+</body>
+</html>
